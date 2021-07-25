@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>Dynamic Form</title>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <div class="row">
+    <h1>Let's Begin!!</h1>
+    <div class="column">
+      <form class="inner-design" action="index.html" method="post">
+        <div class="form-design">
+          <input class="input-design" type="text" id="import-name" placeholder="Name" required>
+          <input class="input-design" type="text" id="import-contact" placeholder="Contact" required>
+          <input class="input-design" type="text" id="import-address" placeholder="Address" required>
+          <input class="input-design" type="text" id="import-college" placeholder="College" required>
+          <input class="button-design" value="Submit" type="submit" name="submit" id="submit" onclick="AddRow()">
+        </div>
+      </form>
+    </div>
+    <div class="column">
+      <div class="card-outline">
+        <div class="card-design">
+          <label class="label-design" for="">Name:<span id="export-name"></span></label>
+          <label class="label-design" for="">Contact:<span id="export-contact"></span></label>
+          <label class="label-design" for="">Address:<span id="export-address"></span></label>
+          <label class="label-design" for="">College:<span id="export-college"></span></label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
